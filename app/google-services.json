@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "967360308178",
+    "project_id": "rowikiband",
+    "storage_bucket": "rowikiband.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967360308178:android:2ed8fdbb9f8306743f5e0b",
+        "android_client_info": {
+          "package_name": "com.example.robandwiki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967360308178-gqr89d3hkmk2obameoor206h0bq329h0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRWgO5xzH0yaJ_9rMu6JnfgQqy_Smw7ZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967360308178-gqr89d3hkmk2obameoor206h0bq329h0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

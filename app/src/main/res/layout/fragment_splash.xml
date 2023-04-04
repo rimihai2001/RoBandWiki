@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SplashFragment">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="@string/robandwiki"
+        android:textColor="#B71C1C"
+        android:textSize="60sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/band_image"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:background="#8B0000" />
+
+    <TextView
+        android:id="@+id/powered_by_text"
+        android:layout_width="398dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/powered_by_rock_monsters_romania"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+</FrameLayout>

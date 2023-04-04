@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SignInFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPassword"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/sign_in"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/buttonSwitchToSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/switch_to_sign_up"
+            android:textSize="16sp"
+            android:layout_below="@id/buttonSignIn"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+            android:id="@+id/buttonGoogleSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/google_sign_in"
+            android:textSize="16sp"
+            android:layout_below="@id/buttonSwitchToSignUp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="@color/google_red"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
