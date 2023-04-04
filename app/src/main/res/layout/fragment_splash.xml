@@ -42,7 +42,7 @@
         android:textSize="14sp" />
 
     <Button
-        android:id="@+id/buttonSplash"
+        android:id="@+id/buttonEnterNow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/explore_now"
