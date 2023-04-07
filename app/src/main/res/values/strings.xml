@@ -15,4 +15,8 @@
     <string name="powered_by_rock_monsters_romania">Powered by Rock Monsters Romania</string>
     <string name="switch_to_login">Switch to Login</string>
     <string name="explore_now">Explore Now!</string>
+    <string name="our_recommendation">Our Recommendation</string>
+    <string name="hello_user">Hello, User!</string>
+    <string name="logout">Sign Out</string>
+    <string name="rock_on">Rock On!</string>
 </resources>

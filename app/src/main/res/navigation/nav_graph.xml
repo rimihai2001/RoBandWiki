@@ -37,4 +37,14 @@
         android:name="com.example.robandwiki.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.robandwiki.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/recommendationFragment"
+        android:name="com.example.robandwiki.fragments.RecommendationFragment"
+        android:label="fragment_recommendation"
+        tools:layout="@layout/fragment_recommendation" />
 </navigation>
