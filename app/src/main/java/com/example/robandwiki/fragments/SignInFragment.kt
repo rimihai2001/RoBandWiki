@@ -93,7 +93,7 @@ class SignInFragment : Fragment() {
             .addOnCompleteListener(requireActivity()) { task ->
                 if (task.isSuccessful) {
                     val user = auth.currentUser
-                    // TODO: Update UI with user information
+                    findNavController().navigate(R.id.action_signInFragment_to_homeFragment)
                 } else {
                     Toast.makeText(requireContext(), "Authentication Failed.", Toast.LENGTH_SHORT).show()
                 }
