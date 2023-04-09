@@ -2,10 +2,43 @@ package com.example.robandwiki
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.fragment.app.Fragment
+import com.example.robandwiki.databinding.ActivityMainBinding
+import com.example.robandwiki.fragments.*
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding : ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.bottomNavigationView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.bands -> replaceFragment(HomeFragment())
+                R.id.profile -> replaceFragment(ProfileFragment())
+                R.id.info -> replaceFragment(RecommendationFragment())
+                else -> {}
+            }
+            true
+        }
+
+    }
+
+    private fun replaceFragment(fragment : Fragment) {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frame_layout, fragment)
+
+        if (fragment is SplashFragment || fragment is SignInFragment || fragment is SignUpFragment) {
+            binding.bottomNavigationView.visibility = View.GONE
+        } else {
+            binding.bottomNavigationView.visibility = View.VISIBLE
+        }
+
+        fragmentTransaction.commit()
     }
 }
