@@ -24,7 +24,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
     }
 
     private fun getRemoveView(title: String, message: String): RemoteViews {
-        val remoteView = RemoteViews("com.example.robandwiki", R.layout.notification)
+        val remoteView = RemoteViews(packageName, R.layout.notification)
 
         remoteView.setTextViewText(R.id.notification_title, title)
         remoteView.setTextViewText(R.id.notification_description, message)
@@ -33,7 +33,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         return remoteView
     }
 
-    fun generateNotification(title: String, message: String) {
+    private fun generateNotification(title: String, message: String) {
         val intent = Intent(this, MainActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
 
@@ -46,7 +46,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
             }
         )
 
-        val builder: NotificationCompat.Builder = NotificationCompat.Builder(applicationContext, channelId)
+        val builder = NotificationCompat.Builder(applicationContext, channelId)
             .setSmallIcon(R.drawable.logo_rm)
             .setAutoCancel(true)
             .setVibrate(longArrayOf(1000, 1000, 1000, 1000))
@@ -64,3 +64,4 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         notificationManager.notify(0, builder.build())
     }
 }
+
