@@ -26,6 +26,28 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+        //checkFragment()
+        //binding.bottomNavigationView.visibility = View.GONE
+        val currentFragment = supportFragmentManager.findFragmentById(R.id.frame_layout)
+        if (currentFragment is SplashFragment || currentFragment is SignInFragment || currentFragment is SignUpFragment) {
+            binding.bottomNavigationView.visibility = View.GONE
+        } else {
+            binding.bottomNavigationView.visibility = View.VISIBLE
+        }
+
+    }
+
+    fun setBottomNavigationVisibility(visibility: Int) {
+        binding.bottomNavigationView.visibility = visibility
+    }
+
+    private fun checkFragment() {
+        val currentFragment = supportFragmentManager.findFragmentById(R.id.frame_layout)
+        if (currentFragment is SplashFragment || currentFragment is SignInFragment || currentFragment is SignUpFragment) {
+            binding.bottomNavigationView.visibility = View.GONE
+        } else {
+            binding.bottomNavigationView.visibility = View.VISIBLE
+        }
     }
 
     private fun replaceFragment(fragment : Fragment) {
