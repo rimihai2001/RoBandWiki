@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="google_red">#DB4437</color>
+    <color name="rm_red">#CF2E2E</color>
 </resources>
