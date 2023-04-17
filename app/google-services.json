@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "967360308178",
+    "firebase_url": "https://rowikiband-default-rtdb.firebaseio.com",
     "project_id": "rowikiband",
     "storage_bucket": "rowikiband.appspot.com"
   },
@@ -14,7 +15,7 @@
       },
       "oauth_client": [
         {
-          "client_id": "967360308178-gqr89d3hkmk2obameoor206h0bq329h0.apps.googleusercontent.com",
+          "client_id": "967360308178-utjgakkt9oj5h2rnmcgf0v3j3ci6tqfl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
