@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.robandwiki.Band
 import com.example.robandwiki.MyAdapter
 import com.example.robandwiki.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.database.*
 
 class HomeFragment : Fragment() {
@@ -30,6 +31,7 @@ class HomeFragment : Fragment() {
         userRecyclerview.setHasFixedSize(true)
         bandArrayList = arrayListOf<Band>()
         getUserData()
+        requireActivity().findViewById<BottomNavigationView>(R.id.bottomNavigationView)?.visibility=View.VISIBLE
         return view
     }
 

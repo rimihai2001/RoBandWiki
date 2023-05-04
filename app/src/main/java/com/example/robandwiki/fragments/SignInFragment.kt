@@ -59,7 +59,7 @@ class SignInFragment : Fragment() {
 
         // Set click listener for Google sign in button
         val googleSignInOptions = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken("967360308178-utjgakkt9oj5h2rnmcgf0v3j3ci6tqfl.apps.googleusercontent.com")
+            .requestIdToken(getString(R.string.google_default_web_client_id))
             .requestEmail()
             .build()
 

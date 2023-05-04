@@ -13,7 +13,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.robandwiki.MainActivity
 import com.example.robandwiki.R
 import com.example.robandwiki.databinding.FragmentSplashBinding
-
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class SplashFragment : Fragment() {
@@ -31,6 +31,7 @@ class SplashFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //(activity as MainActivity).setBottomNavigationVisibility(View.GONE)
+
 
         navController = findNavController()
 

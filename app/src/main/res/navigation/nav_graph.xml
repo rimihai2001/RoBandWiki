@@ -42,7 +42,11 @@
         android:id="@+id/homeFragment"
         android:name="com.example.robandwiki.fragments.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_splashFragment"
+            app:destination="@id/splashFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.robandwiki.fragments.ProfileFragment"
