@@ -16,6 +16,13 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="100dp"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#B71C1C"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
+
     <TextView
         android:id="@+id/textViewRockOn"
         android:layout_width="wrap_content"
@@ -23,8 +30,7 @@
         android:text="@string/rock_on"
         android:textColor="#B71C1C"
         android:textSize="24sp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="150dp"/>
+        android:layout_gravity="center_horizontal"/>
 
     <Button
         android:id="@+id/logoutButton"
@@ -34,7 +40,7 @@
         android:textColor="#FFFFFF"
         android:backgroundTint="#B71C1C"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="32dp"/>
 
 
 
