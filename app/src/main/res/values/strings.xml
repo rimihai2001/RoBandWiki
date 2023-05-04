@@ -21,4 +21,5 @@
     <string name="rock_on">Rock On!</string>
     <string name="default_notification_channel_id">com.example.robandwiki</string>
     <string name="google_default_web_client_id" translatable="false">967360308178-utjgakkt9oj5h2rnmcgf0v3j3ci6tqfl.apps.googleusercontent.com</string>
+    <string name="rock_la_mures_2023">Rock La Mures 2023</string>
 </resources>

@@ -7,12 +7,31 @@
     tools:context=".fragments.RecommendationFragment">
 
     <TextView
-    android:id="@+id/textViewRecommendation"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/our_recommendation"
-    android:textSize="24sp"
-    android:textColor="#B71C1C"
-    android:layout_gravity="center_horizontal"/>
+        android:id="@+id/textViewRecommendation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/our_recommendation"
+        android:textSize="24sp"
+        android:textColor="#B71C1C"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
 
-    </FrameLayout>
+    <TextView
+        android:id="@+id/recommandationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rock_la_mures_2023"
+        android:textSize="35sp"
+        android:textColor="#B71C1C"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"/>
+
+
+    <VideoView
+        android:id="@+id/videoViewRecommendation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"/>
+
+</FrameLayout>
