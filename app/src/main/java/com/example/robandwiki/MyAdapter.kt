@@ -28,7 +28,7 @@ class MyAdapter(private val bandList : ArrayList<Band>) : RecyclerView.Adapter<M
         btnShare.setOnClickListener {
             val shareIntent = Intent(Intent.ACTION_SEND)
             shareIntent.type = "text/plain"
-            shareIntent.putExtra(Intent.EXTRA_TEXT, "Check out this band: ${currentitem.bandName} - ${currentitem.bandLocation} (${currentitem.bandGenre})")
+            shareIntent.putExtra(Intent.EXTRA_TEXT, "Check out this band:\n${currentitem.bandName}\n(${currentitem.bandGenre})\nFrom ${currentitem.bandLocation} ")
             holder.itemView.context.startActivity(Intent.createChooser(shareIntent, "Share via"))
         }
     }

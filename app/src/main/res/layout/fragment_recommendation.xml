@@ -13,8 +13,14 @@
         android:text="@string/our_recommendation"
         android:textSize="24sp"
         android:textColor="#B71C1C"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"/>
+        android:layout_gravity="center_horizontal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#B71C1C"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
 
     <TextView
         android:id="@+id/recommandationName"

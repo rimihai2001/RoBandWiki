@@ -22,4 +22,13 @@
     <string name="default_notification_channel_id">com.example.robandwiki</string>
     <string name="google_default_web_client_id" translatable="false">967360308178-utjgakkt9oj5h2rnmcgf0v3j3ci6tqfl.apps.googleusercontent.com</string>
     <string name="rock_la_mures_2023">Rock La Mures 2023</string>
+    <string name="sign_up_to_robandwiki">Sign Up To RoBandWiki</string>
+    <string name="thank_you_for_choosing_robandwiki">Thank you for choosing RoBandWiki</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="band_name">Band Name:</string>
+    <string name="e_an_na">E-an-na</string>
+    <string name="band_genre">Band Genre:</string>
+    <string name="folk_metal">Folk-Metal</string>
+    <string name="band_location">Band Location:</string>
+    <string name="sibiu">Sibiu</string>
 </resources>

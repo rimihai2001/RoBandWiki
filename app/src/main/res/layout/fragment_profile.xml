@@ -42,6 +42,16 @@
         android:layout_gravity="center"
         android:layout_marginTop="32dp"/>
 
+    <TextView
+        android:id="@+id/textViewThankYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thank_you_for_choosing_robandwiki"
+        android:textColor="#B71C1C"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="500dp"/>
+
 
 
 </FrameLayout>
